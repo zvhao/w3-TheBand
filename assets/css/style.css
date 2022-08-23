@@ -161,16 +161,34 @@ body {
     font-size: 10px;
 }
 
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right;
     padding: 0 21px;
     cursor: pointer;
 }
 
+
 #header .search-btn:hover {
     background-color: #f44336 !important;
 }
 
+#header .mobile-menu-btn:hover .menu-icon{
+    color: #000;
+}
+
+#header .mobile-menu-btn:hover {
+    background-color: #ccc !important; 
+}
+
+#header .menu-icon,
 #header .search-icon {
     color: #fff;
     font-size: 20px;
@@ -215,9 +233,12 @@ body {
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding: 64px 0 112px;
+    padding-left: 16px;
+    padding-right: 16px;
 
 }
 
@@ -303,7 +324,7 @@ body {
 }
 
 .tour-list {
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .tour-img {
